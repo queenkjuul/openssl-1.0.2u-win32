@@ -155,7 +155,7 @@ else
 	}
 
 # generate symbols.pdb unconditionally
-$app_cflag.=" /Zi /Fd\$(TMP_D)/app";
+$app_cflag.=" /Zi /Fd\$(TMP_D)/app -DOPENSSL_USE_IPV6=0";
 $lib_cflag.=" /Zi /Fd\$(TMP_D)/lib";
 $lflags.=" /debug";
 
